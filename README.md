@@ -11,6 +11,5 @@ Easily set up a development environment for [LazyVim](https://www.lazyvim.org/) 
 Start the devcontainer:
 
 ```bash
-devpod up . --provider docker --dotfiles https://github.com/codenitter/devdots.git --dotfiles-script setup --ide none
+devpod up . --provider docker --dotfiles https://github.com/codenitter/devdots.git --ide none
 ```
-
