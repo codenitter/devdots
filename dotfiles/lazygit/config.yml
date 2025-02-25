@@ -1,0 +1,13 @@
+gui:
+  sidePanelWidth: 0.2
+
+git:
+  paging:
+    colorArg: always
+    pager: delta --paging=never --24-bit-color=never --side-by-side --dark
+
+os:
+  edit: '/usr/local/bin/nvim {{filename}}'
+  editAtLine: '/usr/local/bin/nvim --line={{line}} {{filename}}'
+  editAtLineAndWait: '/usr/local/bin/nvim --block --line={{line}} {{filename}}'
+
