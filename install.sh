@@ -52,13 +52,15 @@ install_packages() {
 		zoxide \
 		nodejs \
 		yazi \
-		xclip
+		xclip \
+		jq
 }
 
 setup_dotfiles() {
 	export XDG_CONFIG_HOME="$HOME"/.config
 	mkdir -p "$XDG_CONFIG_HOME"
 	ln -sf "$PWD/dotfiles/.bashrc" "$HOME/.bashrc"
+	ln -sf "$PWD/dotfiles/starship.toml" "$XDG_CONFIG_HOME/starship.toml"
 	git clone https://github.com/LazyVim/starter "$XDG_CONFIG_HOME/nvim"
 	rm -rf "$XDG_CONFIG_HOME/nvim/.git"
 }
